@@ -1,7 +1,13 @@
 export default function primeFactor(n: number, callback:Function){
-    if (n % 2 == 0){
-        callback([2])
-        return
+    let result: number[] = new Array()
+    let divider = 2;
+    while(n != 1){
+        if (n%divider == 0){
+            result.push(divider)
+            n /= divider
+        }else{
+            divider++
+        }
     }
-    callback([3])
+    callback(result)
 }
