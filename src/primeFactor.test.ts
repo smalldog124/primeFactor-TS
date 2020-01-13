@@ -8,4 +8,13 @@ describe('primeFactor', () => {
            expect(actual).toEqual(expected)
        })
     })
+
+    it('Input 3 should be array [3]', () => {
+        const expected = [3]
+        const num = 3
+
+       primeFactor(num,function(actual:number){
+           expect(actual).toEqual(expected)
+       })
+    });
 });
