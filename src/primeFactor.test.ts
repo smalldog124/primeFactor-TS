@@ -4,8 +4,8 @@ describe('primeFactor', () => {
         const expected = [2]
         const num = 2
 
-        const actual = primeFactor(num)
-
-        expect(actual).toEqual(expected)
+       primeFactor(num,function(actual:number){
+           expect(actual).toEqual(expected)
+       })
     })
 });

@@ -1,3 +1,3 @@
-export default function primeFactor(n: number):number[]{
-return [2]
+export default function primeFactor(n: number, callback:Function){
+    callback([2])
 }
